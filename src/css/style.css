@@ -1,11 +1,161 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+body{
+	margin: 0px;
+	padding-bottom: 60px;
+}
+
+	.titles{
+		background-image: url(../images/london-background.jpeg);
+		background-size: cover;
+		position: relative;
+		height: 300px;
+		z-index: 1;
+  }
+
+  .titles::after{
+	content: '';
+	position: absolute;
+	width: 170px;
+	height: 150px;
+	border-radius: 50%;
+  	z-index: -1;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	top: 6%;
+  	border-style: solid;
+  	border-width: 50px;
+  	border-color: rgb(220, 53, 40);
+}
+
+  @media screen and (min-width: 1200px) {
+	.titles{
+		font-size: 55px;
+	}
+
+	.popular-now-text {
+		font-size: 10px;
 	}
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+	.title1{
+		font-family: Helvetica, sans-serif;
+		text-align: center;
+		font-size: 35px;
+		margin: 0px;
+		padding-top: 80px;
+		color: white;
+		text-shadow: 1px 1px 2px black;
+   }
+
+	.title2{
+		font-family: Helvetica, sans-serif;
+		text-align: center;
+		font-size: 72px;
+		margin: 0px;
+		background-color: white;
+		text-shadow: 1px 1px 2px black;
+  }
+
+	.intro-text{
+		font-family: Helvetica, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		line-height: 1.3;
+		font-size: 18px;
+  }
+
+	.intro{
+		background-color: #303F9F;
+		padding: 30px;
+  }
+
+	.popular-now {
+   	display: flex;
+ 		align-items: center;
+   	column-gap: 20px;
+   	background-color: #BBDEFB;
+   	padding: 10px;
+ 	}
+
+	.popular-now-image{
+   	max-width: 300px;
+		max-height: 400px;
+		object-fit: cover;
+  }
+
+	.popular-now-text {
+		font-size: 16px;
+		font-family: Helvetica, sans-serif;
+		line-height: 1.4;
+   	margin: 0px;
+   	padding: 0px;
+  }
+
+	.top-attractions{
+		font-family: Helvetica, sans-serif;
+		display: flex;
+		column-gap: 30px;
+		padding: 15px;
+		background-image: linear-gradient(45deg, #cdd4f8 16.67%, #ffffff 16.67%, #ffffff 50%, #cdd4f8 50%, #cdd4f8 66.67%, #ffffff 66.67%, #ffffff 100%);
+		background-size: 1272.79px 1272.79px;
 	}
-}
+
+	.top-attractions-image{
+		max-width: 300px;
+		max-height: 200px;
+		object-fit: cover;
+	}
+
+	.top-attractions-list{
+		padding-top: 30px;
+	}
+
+  .top-attractions-title{
+		display: block;
+		position: absolute;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 834px) {
+		.top-attractions-list{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin-top: 50px;
+				column-gap: 20px;
+				row-gap: 20px;
+				padding-top: 0px;
+		}
+
+		.top-attractions{
+			background-image: url(../images/triangle.svg);
+			background-position: left;
+			background-size: 400px;
+			background-repeat: no-repeat;
+		}
+
+	}
+
+	@media screen and (min-width: 1200px) {
+	 .top-attractions-list{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-top: 50px;
+			column-gap: 20px;
+			row-gap: 10px;
+			padding-top: 0px;
+	 }
+
+	 .top-attractions{
+		background-image: url(../images/triangle.svg);
+		background-position: top left, bottom right;
+		background-size: 1200px;
+	}
+	}
+
+
+	.travel-tips{
+		font-family: Helvetica, sans-serif;
+	 	background-color: #BBDEFB;
+	 	padding: 15px;
+	 	line-height: 1.6;
+ }

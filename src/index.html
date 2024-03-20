@@ -6,62 +6,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Description here" />
 	<title>Welcome to London</title>
-	<!--
-		You can connect the CSS to the HTML here,
-		inside the head tag. Here is an example:
-		https://www.w3schools.com/tags/tag_link.asp
 
-		Your CSS is inside the css folder in this project,
-		so you will link to "css/style.css" instead of just
-		"style.css". The css/ represents the folder.
-	-->
+		<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-		<h1>Welcome to London</h1>
-		<img src="https://placehold.co/600x400" alt="London intro image">
-		<p>Visit the capital of the United Kingdom to learn more about the history and culture of the country. As one of the most diverse cities in the world, London hosts new-age restaurants, museums, and more.</p>
+		<section class="titles">
+			<h1 class="title1">Welcome to</h1>
+			<h1 class="title2">London</h1>
+		</section>
 
-			 <p> Create your own adventure through London's cultural neighborhoods and learn about the country's rich and complex history.</p>
+		<section class="intro">
+			<p class="intro-text">Visit the capital of the United Kingdom to learn more about the history and culture of the country. As one of the most diverse cities in the world, London hosts new-age restaurants, museums, and more.</p>
+			<p class="intro-text"> Create your own adventure through London's cultural neighborhoods and learn about the country's rich and complex history.</p>
+		</section>
 
-		 <h2>Popular Now</h2>
-		  <img src="https://placehold.co/300x200" alt="Popular Now">
-		 <p> Discover your spirit with the epic return of the Royal Shakespeare Company’s My Neighbour Totoro, the acclaimed staging of the celebrated 1988 animated feature film by Hayao Miyazaki.</p>
-		 <cite> <a href="https://www.londontheatredirect.com/play/my-neighbour-totoro-tickets">Book your tickets here</a></cite>
-		 <h2>Top Attractions</h2>
-		 <ol>
-			  <li><h4>Buckingham Palace</h4>
-					<img src="https://placehold.co/200x100" alt="Buckingham">
-			  <p>During the summer, and on selected dates from November to December and at Easter, you can explore one of the few working royal palaces in the world.</p>
-			  <cite> <a href="https://maps.app.goo.gl/kKBhRDDwa25GVMyD8">Directions</a></cite></li>
+		 <div class="popular-now">
+			 <div class="image">
+				<img class= "popular-now-image" src="https://assets.playbill.com/editorial/_twitterShareSize/My-Neighbour-Totoro_HR.jpg">
+			 </div>
+			 <div class="popular-now-text">
+				<h2>Popular Now</h2>
+				<p> Discover your spirit with the epic return of the Royal Shakespeare Company’s My Neighbour Totoro, the acclaimed staging of the celebrated 1988 animated feature film by Hayao Miyazaki.
+					<br><br>
+			  <cite> <a href="https://www.londontheatredirect.com/play/my-neighbour-totoro-tickets">Book your tickets here</a></cite></p>
+			 </div>
+		  </div>
 
-			  <li><h4>St Paul’s Cathedral</h4>
-					<img src="https://placehold.co/200x100" alt="Cathedral">
-			  <p>Explore the working cathedral steeped in history and marvel at the marble architecture throughout the historic landmark.</p>
-			  <cite> <a href="https://maps.app.goo.gl/kUakb2Rt5FumyZPY9">Directions</a></cite></li>
+	 <section class="top-attractions">
+			  <h2 class="top-attractions-title">Top Attractions</h2>
+			  <ol class="top-attractions-list">
+					<li><h4>Buckingham Palace</h4>
+						 <img class="top-attractions-image" src="images/buckingham-palace.jpeg" alt="Buckingham Palace">
+					<p>During the summer, and on selected dates from November to December and at Easter, you can explore one of the few working royal palaces in the world.</p>
+					<cite> <a href="https://maps.app.goo.gl/kKBhRDDwa25GVMyD8">Directions.</a></cite></li>
 
-			  <li><h4>Big Ben</h4>
-					<img src="https://placehold.co/200x100" alt="BigBen">
-			  <p>The Houses of Parliament's iconic clock tower is one of London's most famous landmarks. The clock tower looks spectacular during the day and at night.</p>
-			  <cite> <a href="https://maps.app.goo.gl/yaAn9tFbb9YWHHpYA">Directions</a></cite></li>
+					<li><h4>St Paul’s Cathedral</h4>
+						 <img class="top-attractions-image" src="images/st-pauls-cathedral.jpeg" alt="St. Paul's Cathedral">
+					<p>Explore the working cathedral steeped in history and marvel at the marble architecture throughout the historic landmark.</p>
+					<cite> <a href="https://maps.app.goo.gl/kUakb2Rt5FumyZPY9">Directions.</a></cite></li>
 
-			  <li><h4>London Eye</h4>
-					<img src="https://placehold.co/200x100" alt="Eye">
-			  <p>Climb aboard one of the 32 glass capsules of the London Eye for unforgettable views of some of London's most famous landmarks.</p>
-			  <cite> <a href="https://maps.app.goo.gl/5Pk2368SsawPow24A">Directions</a></cite></li>
+					<li><h4>Big Ben</h4>
+						 <img class="top-attractions-image" src="images/Big-Ben.jpeg" alt="Big Ben">
+					<p>The Houses of Parliament's iconic clock tower is one of London's most famous landmarks. The clock tower looks spectacular during the day and at night.</p>
+					<cite> <a href="https://maps.app.goo.gl/yaAn9tFbb9YWHHpYA">Directions.</a></cite></li>
 
-			  <li><h4>Westminster Abbey</h4>
-					<img src="https://placehold.co/200x100" alt="Abbey">
-			  <p>Experience the impressive architecture and discover memorials for more than 30 royals buried at one of London's most important UNESCO World Heritage Sites.</p>
-			  <cite> <a href="https://maps.app.goo.gl/vnBHiVwoe51L7hkF8">Directions</a></cite></li>
-		 </ol>
+					<li><h4>London Eye</h4>
+						 <img class="top-attractions-image" src="images/london-eye.jpeg" alt="London Eye">
+					<p>Climb aboard one of the 32 glass capsules of the London Eye for unforgettable views of some of London's most famous landmarks.</p>
+					<cite> <a href="https://maps.app.goo.gl/5Pk2368SsawPow24A">Directions.</a></cite></li>
 
-		 <h2>Travel Tips</h2>
-		 <ul> <li>Take advantage of London’s extensive public transport system and walkable areas.</li>
-			  <li>Purchase an Oyster card to use the Tube and buses, and top it up as you go.</li>
-			  <li>Be careful when traveling in summer months as humidity increases.</li>
-			  <li>Book attractions and restaurants reservations  in advance.</li>
-			  <li>Keep your belongings close to you.</li>
-			  <li>Avoid traveling during rush hours to reduce wait times.</li>
-		 </ul>
+					<li><h4>Westminster Abbey</h4>
+						 <img class="top-attractions-image" src="images/westminster-abbey.jpeg" alt="Westminster Abbey">
+					<p>Experience the impressive architecture and discover memorials for more than 30 royals buried at one of London's most important UNESCO World Heritage Sites.</p>
+					<cite> <a href="https://maps.app.goo.gl/vnBHiVwoe51L7hkF8">Directions.</a></cite></li>
+			  </ol>
+	 </section>
+
+	 <section class="travel-tips">
+			  <h2>Travel Tips</h2>
+			  <ul> <li>Take advantage of London’s extensive public transport system and walkable areas.</li>
+					<li>Purchase an Oyster card to use the Tube and buses, and top it up as you go.</li>
+					<li>Be careful when traveling in summer months as humidity increases.</li>
+					<li>Book attractions and restaurants reservations  in advance.</li>
+					<li>Keep your belongings close to you.</li>
+					<li>Avoid traveling during rush hours to reduce wait times.</li>
+			  </ul>
+		</section>
 </body>
 </html>
